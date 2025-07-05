@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:mcs="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#">
+
+  <owl:Ontology rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#">
+    <dc:title xml:lang="en">Model Context Style Sheet (MCSS) Vocabulary</dc:title>
+    <dc:description xml:lang="en">A vocabulary for embedding semantic metadata into HTML UI components to create a machine-readable knowledge graph.</dc:description>
+  </owl:Ontology>
+
+  <rdfs:Class rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component">
+    <rdfs:label xml:lang="en">Component</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents a self-contained, reusable UI component.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#componentName">
+    <rdfs:label xml:lang="en">componentName</rdfs:label>
+    <rdfs:comment xml:lang="en">The official, human-readable name of the component.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#version">
+    <rdfs:label xml:lang="en">version</rdfs:label>
+    <rdfs:comment xml:lang="en">The semantic version number of the component.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#status">
+    <rdfs:label xml:lang="en">status</rdfs:label>
+    <rdfs:comment xml:lang="en">The development lifecycle status of the component.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#taxonomyLevel">
+    <rdfs:label xml:lang="en">taxonomyLevel</rdfs:label>
+    <rdfs:comment xml:lang="en">The component's classification in the Atomic Design hierarchy.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#description">
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:comment xml:lang="en">A brief explanation of the component's purpose and function.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#part">
+    <rdfs:label xml:lang="en">part</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifies a constituent part or element within a component.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#author">
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:comment xml:lang="en">The name or team responsible for the component.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#Component"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://gabrielcpule.github.io/mcss-vocab/api/mcss/v1#"/>
+  </rdf:Property>
+
+</rdf:RDF>
